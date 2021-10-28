@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com imagens e Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir este site em diversos dispositivos diferentes</p>
+    <br>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos reproduzir arquivos de audio</p>
+    <audio preload="auto" autoplay controls>
+        <source src="media/Straw Squeak.mp3" type="audio/mpeg">
+        <source src="media/Straw Squeak.ogg" type="audio/mpeg">
+        <source src="media/Straw Squeak.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador nao consegue reproduzir audio. <a href="media/Straw Squeak.mp3">Clique aqui para abixa-lo em mp3</a> </p>
+    </audio>
+
+</body>
+</html>
